@@ -1,0 +1,158 @@
+@import "../../app.scss";
+
+.navbar{
+    height: 100px;
+
+    .wrapper{
+        max-width:1366px;
+        margin: auto 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        @include mobile{
+            margin: auto 20px;
+        }
+
+    }
+    span{
+        font-weight: bold;
+
+        
+    }
+    .platforms{
+        display: flex;
+        gap:20px; //space betwean this icons
+        img{
+            width: 18px;
+            height: 18px;
+        }
+        .img{
+            width: 22px;
+            object-fit: cover; 
+        }
+        
+    }
+
+    .platform {
+        display: flex;
+        gap: 20px;
+        @include mobile{
+            gap: 1px;
+        }
+    
+        a {
+            color: #070C0D;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0px 0px;
+            padding: 10px 10px;
+            position: relative;
+            z-index: 0;
+            cursor: pointer;
+        
+
+            &:before,
+            &:after {
+                position: absolute;
+                left: 0px;
+                width: 100%;
+                height: 2px;
+                background: rgb(245, 160, 4);
+                content: "";
+                opacity: 0;
+                transition: all 0.3s;
+            }
+
+            &:before {
+                top: 0px;
+                transform: translateY(10px);
+            }
+
+            &:after {
+                bottom: 0px;
+                transform: translateY(-10px);
+            }
+
+            &:hover {
+                &:before,
+                &:after {
+                opacity: 1;
+                transform: translateY(0px);
+                }
+            }
+        }
+
+        
+    }
+
+    
+   .topBotomBordersOut {
+        a {
+            &:before,
+            &:after {
+                position: absolute;
+                left: 0px;
+                width: 100%;
+                height: 2px;
+                background: rgb(245, 160, 4);
+                content: "";
+                opacity: 0;
+                transition: all 0.3s;
+            }
+
+            &:before {
+                top: 0px;
+                transform: translateY(10px);
+            }
+
+            &:after {
+                bottom: 0px;
+                transform: translateY(-10px);
+            }
+
+            &:hover {
+                &:before,
+                &:after {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+            }
+        }
+    }
+}
+
+// mobile
+
+.topnav{
+
+    @include mobile {
+            overflow: hidden;
+            position: relative;
+        }
+    #myLinks{
+        display: block;
+    }
+    span,a{
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;    
+    }
+    span{
+        font-weight: bold;
+    }
+    
+
+    .icon{
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+    }
+
+}

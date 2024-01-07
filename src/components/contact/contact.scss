@@ -1,0 +1,119 @@
+@import "../../app.scss";
+.container{
+    height: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @include mobile{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+      
+    }
+    .ContectTxt{
+        flex: 1;
+        margin-left:50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @include mobile{
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            margin: auto;
+
+        }
+        h1{
+            font-size: 100px;
+            line-height: 88px;
+            @include mobile{
+                font-size: 25px;
+                line-height: 40px;
+                margin-top: 20px;
+
+            }
+
+        }
+
+        h2{
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        
+        .txtinfo{
+            span{
+                font-weight: 300;
+                color: rgb(211, 206, 206);
+                @include mobile{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .contactForm{
+        flex: 1;
+        margin-right:50px;
+        margin-top: 50px;
+        @include mobile{
+            flex:3;
+            margin: auto;
+            padding-top: 0;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @include mobile{
+                gap: 10px;
+            }
+            input, textarea{
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                border-radius: 5px;
+                font-weight: bold;
+                &::placeholder {
+                    color: white;
+                }
+                @include mobile{
+                    padding: 10px;
+                }
+            }
+            button{
+                padding: 20px;
+                border-radius: 5px;
+                border: none;
+                background-color:rgb(245, 160, 4);
+                font-weight: 500;
+                cursor: pointer;
+                @include mobile{
+                    padding: 10px;
+                }
+                &:hover{
+                    background-color: rgb(211, 206, 206);
+                }
+            }
+
+            .success-msg,
+            .error-msg {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 3px 3px 3px 3px;
+            }
+            .error-msg {
+                color: #D8000C;
+                background-color: #FFBABA;
+            }
+            .success-msg {
+                color: #270;
+                background-color: #DFF2BF;
+            }
+        }
+        
+        
+
+    }
+}
