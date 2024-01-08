@@ -80,6 +80,7 @@
         h2 {
           font-size: 36px; 
           color: #070C0D;
+          margin-top: 40px;
           @include mobile{
             font-size: 26px;
           } 
@@ -94,15 +95,25 @@
           }
         }
 
-        button {
+          .disabled-link {
+            pointer-events: none; // Prevents the link from being clickable
+            color: gray;         // Applies a gray color to indicate it's disabled
+            text-decoration: none; // Remove underline
+          }
+
+        a {
           background-color: #070C0D; 
           color: white; 
           border: none;
           border-radius: 10px;
-          padding: 10px 20px; 
-          width: 150px; 
+          width: 100px; 
           cursor: pointer;
-          font-size: 16px; 
+          font-size: 16px;
+          margin-left: 50px;
+          &:hover{
+            background-color: #062c36;
+          }
+
         }
       }
     }

@@ -5,27 +5,34 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "shopping site with ReactJS & API ",
+    img: "public/shopping.PNG",
+    desc: "The project is a modern and interactive e-commerce shopping site built using React.js, API integration, and local storage. It offers users a seamless and engaging online shopping experience with a range of features designed to enhance usability and functionality.",
+    demo:"https://shoppinghm.netlify.app/",
+    repo:"https://github.com/Hafed112/shopping/tree/main",
   },
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "ReactJS & Material-UI dashboard",
+    img: "public/dashboard.PNG",
+    desc: "Creating a dashboard with React.js and Material-UI involves building a user interface that displays important data and insights in a visually appealing and organized manner.",
+    demo:"https://adminhm.netlify.app",
+    repo:"https://github.com/Hafed112/Admin_Dashboard",
   },
   {
     id: 3,
-    title: "Vanilla JS App",
+    title: "Node JS, ExpressJS, MongoDB AND JWT authentification App",
     img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "Building a shopping app with Node.js, JWT authentication, Express.js middleware, and MongoDB involves creating a backend server that handles user authentication, product management, and order processing.",
+    repo:"https://github.com/Hafed112/api-",
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "TypeScript Pomodoro Clock",
+    img: "public/click.PNG",
+    desc: "Building a TypeScript Pomodoro Clock project! This web application is built using TypeScript, providing users with a Pomodoro timer to help manage work and break sessions efficiently. The app features a user-friendly interface, customizable session lengths, and a visually appealing design to enhance your productivity.",
+    demo:"https://mellow-manatee-5a1146.netlify.app/",
+    repo:"https://github.com/Hafed112/build_25_5_clock",
   },
 ];
 
@@ -48,7 +55,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+              <a href={item.demo} target="_blank" rel="noopener noreferrer" 
+              className={`${!item.demo ?'disabled-link' :''}`}>See Demo</a>
+              <a href={item.repo} target="_blank" rel="noopener noreferrer">Repo</a>            
           </motion.div>
         </div>
       </div>
