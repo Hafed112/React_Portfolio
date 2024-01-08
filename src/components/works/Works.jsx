@@ -6,7 +6,7 @@ const items = [
   {
     id: 1,
     title: "shopping site with ReactJS & API ",
-    img: "public/shopping.PNG",
+    img: "/shopping.PNG",
     desc: "The project is a modern and interactive e-commerce shopping site built using React.js, API integration, and local storage. It offers users a seamless and engaging online shopping experience with a range of features designed to enhance usability and functionality.",
     demo:"https://shoppinghm.netlify.app/",
     repo:"https://github.com/Hafed112/shopping/tree/main",
@@ -14,7 +14,7 @@ const items = [
   {
     id: 2,
     title: "ReactJS & Material-UI dashboard",
-    img: "public/dashboard.PNG",
+    img: "/dashboard.PNG",
     desc: "Creating a dashboard with React.js and Material-UI involves building a user interface that displays important data and insights in a visually appealing and organized manner.",
     demo:"https://adminhm.netlify.app",
     repo:"https://github.com/Hafed112/Admin_Dashboard",
@@ -29,7 +29,7 @@ const items = [
   {
     id: 4,
     title: "TypeScript Pomodoro Clock",
-    img: "public/click.PNG",
+    img: "/click.PNG",
     desc: "Building a TypeScript Pomodoro Clock project! This web application is built using TypeScript, providing users with a Pomodoro timer to help manage work and break sessions efficiently. The app features a user-friendly interface, customizable session lengths, and a visually appealing design to enhance your productivity.",
     demo:"https://mellow-manatee-5a1146.netlify.app/",
     repo:"https://github.com/Hafed112/build_25_5_clock",
