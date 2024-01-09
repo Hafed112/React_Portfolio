@@ -26,8 +26,16 @@ const items = [
     desc: "Building a shopping app with Node.js, JWT authentication, Express.js middleware, and MongoDB involves creating a backend server that handles user authentication, product management, and order processing.",
     repo:"https://github.com/Hafed112/api-",
   },
+    {
+    id: 5,
+    title: "Quote Random Machine",
+    img: "/Capture.PNG",
+    desc: "Welcome to Quote Random Machine, a React.js web application built with TypeScript and styled with CSS to deliver a delightful experience of discovering random quotes.",
+    demo:"https://randomquotesmachine1.netlify.app/",
+    repo:"https://github.com/Hafed112/Random-quote-machine1",
+  },
   {
-    id: 4,
+    id: 5,
     title: "TypeScript Pomodoro Clock",
     img: "/click.PNG",
     desc: "Building a TypeScript Pomodoro Clock project! This web application is built using TypeScript, providing users with a Pomodoro timer to help manage work and break sessions efficiently. The app features a user-friendly interface, customizable session lengths, and a visually appealing design to enhance your productivity.",
